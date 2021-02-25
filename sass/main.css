@@ -1,0 +1,148 @@
+@import url(d:\Front End\Pierwsza strona\sass\reset.css);
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 20px;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 10px auto;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.underline {
+  margin: 10px auto;
+  width: 60px;
+  height: 4px;
+  background-color: #5f61e0;
+}
+
+.scroll-fix::before {
+  content: '';
+  display: block;
+  height: 62px;
+  margin-top: -62xx;
+}
+
+nav {
+  text-transform: uppercase;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+nav a, nav i {
+  color: #fff200;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+nav a:hover {
+  color: #5f61e0;
+}
+
+nav i {
+  padding: 8px;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+nav .active {
+  color: #5f61e0;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+header {
+  color: #fff;
+  overflow: hidden;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/hero-small3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -10;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 85%;
+  font-size: 30px;
+}
+
+header .btn-outline-light {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+header .fa-angle-double-down {
+  display: none;
+}
+
+#aboutus i {
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+#aboutus p {
+  font-family: 'monserrata';
+  font-size: 16px;
+}
+
+#aboutus .aboutus-hover {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  visibility: hidden;
+}
+
+#aboutus .aboutus-hover:hover {
+  color: #5f61e0;
+}
+
+#aboutus .aboutus-img {
+  margin-top: 30px;
+  height: 367px;
+  background-image: url("../img/aboutus-img.jpg");
+  background-position: center;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,129 @@
+@import reset
+
+$bluecolor: #5f61e0
+
+html
+    scroll-behavior: smooth
+
+body
+    position: relative
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 20px
+
+
+.wrapper
+    width: 80%
+    margin: 10px auto
+    
+    
+h2
+    text-transform: uppercase
+    text-align: center
+
+.underline
+    margin: 10px auto
+    width: 60px
+    height: 4px
+    background-color: $bluecolor
+
+.scroll-fix::before
+    content: ''
+    display: block
+    height: 62px
+    margin-top: -62xx
+
+
+
+// NAWIGACJA
+
+
+nav
+    text-transform: uppercase
+    transition: .6s
+
+    a, i
+        color: #fff200
+        transition: color .3s
+
+    a:hover 
+        color: $bluecolor
+
+    i
+        padding: 8px
+
+
+    .navbar-brand
+        font-weight: bold
+
+    .active
+        color: $bluecolor
+
+.shadow-bg
+    background-color: rgba(0,0,0,.85)
+
+// HEADER
+
+header
+    color: #fff
+    overflow: hidden
+
+    h1
+        text-transform: uppercase
+
+    .hero-img
+        position: relative
+        height: 100vh
+        background-image: url('../img/hero-small3.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        z-index: 0
+
+    .hero-shadow
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.8)
+        z-index: -10
+
+    .hero-text
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        height: 85%
+        font-size: 30px
+
+    .btn-outline-light
+        text-transform: uppercase
+        font-size: 15px
+
+    .fa-angle-double-down
+        display: none
+
+
+
+// MAIN
+
+#aboutus
+    i
+        font-size: 40px
+        margin-top: 40px
+
+    p
+        font-family: 'monserrata'
+        font-size: 16px
+
+    .aboutus-hover
+        transition: color .3s
+        visibility: hidden
+ 
+    .aboutus-hover:hover
+        color: $bluecolor
+
+    .aboutus-img
+        margin-top: 30px
+        height: 367px
+        background-image: url('../img/aboutus-img.jpg')
+        background-position: center
+
